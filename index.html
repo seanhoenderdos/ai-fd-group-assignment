@@ -4,12 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Cool Cleaners</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./header-footer.css">
 </head>
-<body>
-    <main>
+<body class="site-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="header">
+        <div class="site-container header-inner">
+            <a class="site-brand" href="./index.html">
+                <i class="fa-solid fa-broom" aria-hidden="true"></i>
+                Cool Cleaners
+            </a>
+
+            
+            <input class="menu-toggle" type="checkbox" id="menu-toggle"
+                   aria-controls="primary-navigation">
+            <label class="menu-label" for="menu-toggle">
+                <span class="visually-hidden">Navigation menu</span>
+                <i class="fa-solid fa-bars menu-icon-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-xmark menu-icon-close" aria-hidden="true"></i>
+            </label>
+
+            <nav class="site-nav" id="primary-navigation" aria-label="Primary">
+                <ul class="site-nav-list">
+                    <li><a href="./index.html" aria-current="page">Home</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/services.html">Services</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main class="site-main site-container" id="main-content" tabindex="-1">
         <h1>Home</h1>
         <p>Our website is being built.</p>
     </main>
+
+    <footer class="footer">
+        <div class="site-container footer-inner">
+            <p class="footer-copyright">
+                All Rights Reserved.
+                &copy; <script>document.write(new Date().getFullYear())</script> Cool Cleaners
+            </p>
+            <nav aria-label="Footer">
+                <ul class="footer-links">
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/services.html">Services</a></li>
+                    <li><a href="./pages/contact.html">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        Contact
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>

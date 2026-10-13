@@ -1,4 +1,9 @@
-Ai Usage Log
+AI USAGE LOG
+
+_______________________________________________________________
+_______________________________________________________________
+_______________________________________________________________
+
 
 Sean Hoenderdos:
 
@@ -19,19 +24,73 @@ What I learned:
 Files can clash in GIT but there can also be problems wiht links, fonts, and styles when GIt can merge the files.
 
 My testing:
-Pending. I still need to check these findings in teh files and test the pages in the browser.
+Pending. I still need to check these findings in the files and test the pages in the browser.
 
 Decision:
 Pedning verfication. No changes have been merged from this review.
 
+Team decision: During the meeting on 13 October 2026, we agreed to use Sean’s header and footer design.
+
 Evidence:
 https://github.com/seanhoenderdos/ai-fd-group-assignment/compare/main...nourhan-header-footer
 
+____________________________________________________________________________________________________________________________________________
+
+
+Date: 13 October 2026
+Task: Build a hamburger menu using html and css.
+
+Think and try first:
+I have no idea how to do this. So i resorted to youtube to learn.
+
+What I learned:
+1. The checkbox stores whether the menu is open
+   An input with type="checkbox" is visually hidden. Unchecked means closed; checked means open.
+
+2. The hamburger is a label
+   The label’s for="menu-toggle" matches the checkbox’s id="menu-toggle". Clicking the label toggles that checkbox. 
+   Font Awesome supplies the hamburger and X icons.
+
+3. CSS targets the checked state
+   .menu-toggle:checked ~ .site-nav
+This means: when the checkbox is checked, find .site-nav later in the same parent and show it. 
+Normally the navigation has display: none; this rule changes it to display: block.
+
+4. The icons swap
+   .menu-toggle:checked + .menu-label targets the label immediately after the checkbox. We hide the hamburger inside it and show the X.
+
+The targeting symbols:
+- .name targets a class
+- #name targets an ID
+- A B targets B anywhere inside A
+- A + B targets B immediately after A
+- A ~ B targets B later under the same parent
+- :checked, :hover and :focus-visible target a particular state
+- [aria-current="page"] targets the current page’s link
+
+Core CSS used:
+- Flexbox to arrange the logo, button and links
+- flex-direction: column to stack mobile links
+- align-items: center to centre them horizontally in that column
+- gap and padding for spacing
+- border-radius and an rgba background for the rounded highlight
+- A media query at 48rem, normally 768px, to hide the hamburger and show horizontal desktop navigation
+
+The HTML order matters: checkbox → label → navigation, all inside the same parent. That’s what makes the + and ~ selectors work.
+
+Testing:
+I tested it by opening dev tools and making sure it works as intended.
+
+Evidence:
+https://www.youtube.com/watch?v=OnWTTUfBLMo
+
+______________________________________________________________________________
 ______________________________________________________________________________
 ______________________________________________________________________________
 
 Nourhan Magdy:
 
+______________________________________________________________________________
 ______________________________________________________________________________
 ______________________________________________________________________________
 

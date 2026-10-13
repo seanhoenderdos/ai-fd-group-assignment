@@ -1,0 +1,301 @@
+/* local roboto fonts */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-VariableFont_wdth,wght.ttf')
+        format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf')
+        format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* @font-face tells browser where to find our fonts. 100-900 tell the browser that each font file contains weights from 100 to 900 */
+
+/* Shared design values */
+
+/* The values inside root are CSS variables which means we can define values once and reuse it with var(...) */
+
+:root {
+    /* Colors */
+    --color-dark: #1f2937;
+    --color-light: #f9faf8;
+    --color-muted: #e5e7eb;
+    --color-primary: #3882f6;
+    --color-white: #ffffff;
+
+    /* Font fam */
+    --font-family-body: "Roboto", Arial, sans-serif;
+
+    /* Font sizes */
+    --font-size-body: 16px;
+    --font-size-secondary: 18px;
+    --font-size-logo: 24px;
+    --font-szie-section-heading: 36px;
+    --font-size-quote: 36px;
+    --font-size-hero-heading: 48px;
+
+    /* Font weights */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+
+    /* base styles */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: var(--font-family-body);
+        font-size: var(--font-size-body);
+        font-weight: var(--font-weight-normal);
+        color: var(--color-dark);
+        background-color: var(--color-white);
+        line-height: 1.5;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font: inherit;
+    }
+}
+
+/* page structure */
+.site-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-container {
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.site-main {
+    flex: 1;
+    padding-block: 40px;
+}
+
+/* header colours and typography come from your shared variables. */
+.header,
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-block: 20px;
+}
+
+.site-brand {
+    color: var(--color-light);
+    font-size: var(--font-size-logo);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+}
+
+/* visually hide the checkbox without removing keyboard access on mobile. */
+.menu-toggle,
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+.menu-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 8px 12px;
+    border: 1px solid var(--color-muted);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.menu-label .menu-icon-close {
+    display: none;
+}
+
+/* mobile first: unchecked = closed; checked = open. */
+.site-nav {
+    display: none;
+    width: 100%;
+}
+
+.menu-toggle:checked ~ .site-nav {
+    display: block;
+}
+
+.menu-toggle:checked + .menu-label .menu-icon-open {
+    display: none;
+}
+
+.menu-toggle:checked + .menu-label .menu-icon-close {
+    display: inline-block;
+}
+
+/* The visible label shows focus when its hidden checkbox receives focus. */
+.menu-toggle:focus-visible + .menu-label,
+.header a:focus-visible,
+.footer a:focus-visible {
+    outline: 3px solid var(--color-light);
+    outline-offset: 4px;
+}
+
+.site-nav-list,
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-nav a,
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 8px;
+    color: var(--color-muted);
+    text-decoration: none;
+}
+
+.site-nav a {
+    font-size: var(--font-size-secondary);
+    font-weight: var(--font-weight-light);
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+/* Preserve your existing footer hover style. */
+.footer-links a:hover {
+    color: var(--color-light);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Translucent backgrounds keep the navigation text fully opaque. */
+.site-nav a:hover,
+.site-nav a:focus-visible {
+    color: var(--color-light);
+    font-weight: var(--font-weight-bold);
+    background-color: rgba(255, 255, 255, 0.12);
+    text-decoration: none;
+}
+
+.site-nav a[aria-current="page"] {
+    color: var(--color-light);
+    font-weight: var(--font-weight-bold);
+    background-color: rgba(255, 255, 255, 0.18);
+    text-decoration: none;
+}
+
+.site-nav a:active {
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+/* footer: stack on phones; allow links to wrap instead of overflowing. */
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-block: 24px;
+    text-align: center;
+}
+
+.footer-copyright {
+    margin: 0;
+}
+
+.footer-copyright .fa-broom {
+    margin-inline-end: 6px;
+}
+
+.footer-links {
+    justify-content: center;
+}
+
+/* keyboard users can jump past the repeated navigation. */
+.skip-link {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 10;
+    padding: 10px 16px;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    transform: translateY(-160%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+/* At 768px with the normal browser font setting, show desktop navigation. */
+@media (min-width: 48rem) {
+    .menu-toggle,
+    .menu-label {
+        display: none;
+    }
+
+    .site-nav {
+        display: block;
+        width: auto;
+    }
+
+    .site-nav-list {
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-nav a {
+        transition: none;
+    }
+}
