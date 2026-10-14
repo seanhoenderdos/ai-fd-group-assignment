@@ -18,6 +18,12 @@
     font-display: swap;
 }
 
+/* Other CSS files */
+@import url('/Css/pages/about.css');
+@import url('/Css/pages/services.css');
+@import url('/Css/pages/contact.css');
+@import url('/Css/pages/home.css');
+
 /* @font-face tells browser where to find our fonts. 100-900 tell the browser that each font file contains weights from 100 to 900 */
 
 /* Shared design values */
@@ -89,7 +95,7 @@
 
 .site-container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 90%;
     margin-inline: auto;
     padding-inline: 20px;
 }
@@ -112,14 +118,16 @@
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding-block: 20px;
 }
 
-.site-brand {
+.header-logo {
     color: var(--color-light);
     font-size: var(--font-size-logo);
     font-weight: var(--font-weight-bold);
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 /* visually hide the checkbox without removing keyboard access on mobile. */
@@ -241,7 +249,8 @@
 /* footer: stack on phones; allow links to wrap instead of overflowing. */
 .footer-inner {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: space-between;
     align-items: center;
     gap: 8px;
     padding-block: 24px;
@@ -256,6 +265,36 @@
     margin-inline-end: 6px;
 }
 
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--color-muted);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: var(--color-light);
+}
+
+.footer-social a:focus-visible {
+    outline: 3px solid var(--color-light);
+    outline-offset: 4px;
+}
+
 .footer-links {
     justify-content: center;
 }
@@ -266,14 +305,21 @@
     top: 8px;
     left: 8px;
     z-index: 10;
-    padding: 10px 16px;
+    padding: 5px 10px;
     background-color: var(--color-light);
     color: var(--color-dark);
     transform: translateY(-160%);
+    font-size: 10px;
 }
 
 .skip-link:focus {
     transform: translateY(0);
+}
+
+@media (min-width: 1024px) {
+    .footer-inner {
+        flex-direction: row;
+    }
 }
 
 /* At 768px with the normal browser font setting, show desktop navigation. */

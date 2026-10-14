@@ -3,13 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Cool Cleaners</title>
-    <link rel="stylesheet" href="../global.css">
+    <!-- <link rel="icon" href="/" type="image/png"> -->
+    <title>Home | Prime Shine</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/all.min.css">
 </head>
 <body>
-    <main>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="header">
+        <div class="site-container header-inner">
+            <a class="header-logo" href="./index.html">
+                <i class="fa-solid fa-broom" aria-hidden="true"></i>
+                <h4>Prime Shine</h4>
+            </a>
+
+            
+            <input class="menu-toggle" type="checkbox" id="menu-toggle"
+                   aria-controls="primary-navigation">
+            <label class="menu-label" for="menu-toggle">
+                <span class="visually-hidden">Navigation menu</span>
+                <i class="fa-solid fa-bars menu-icon-open" aria-hidden="true"></i>
+                <i class="fa-solid fa-xmark menu-icon-close" aria-hidden="true"></i>
+            </label>
+
+            <nav class="site-nav" id="primary-navigation" aria-label="Primary">
+                <ul class="site-nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main site-container" id="main-content" tabindex="-1">
         <h1>Contact</h1>
         <p>Our website is being built.</p>
     </main>
+
+    <footer class="footer">
+        <div class="site-container footer-inner">
+            <p class="footer-copyright">
+                All Rights Reserved.
+                &copy; 2026 Prime Shine
+            </p>
+
+            
+            <ul class="footer-social" aria-label="Social media">
+                <li>
+                    <a href="/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        <span class="visually-hidden">Prime Shine on Facebook (opens in a new tab)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        <span class="visually-hidden">Prime Shine on Instagram (opens in a new tab)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                        <span class="visually-hidden">Prime Shine on TikTok (opens in a new tab)</span>
+                    </a>
+                </li>
+            </ul>
+
+            <nav aria-label="Footer">
+                <ul class="footer-links">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        Contact
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
