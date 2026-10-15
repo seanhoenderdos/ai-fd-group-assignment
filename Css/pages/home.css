@@ -33,12 +33,15 @@
     font-size: 3rem;
     margin-bottom: 20px;
     max-width: 700px;
+    margin: 0 auto 20px auto;
 }
 
 .hero-description {
     font-size: 1.25rem;
+    font-weight: var(--font-weight-light);
     margin-bottom: 30px;
     max-width: 600px;
+    margin: 0 auto 30px auto;
 }
 
 .hero-buttons {
@@ -92,6 +95,11 @@
 
     .hero-left, .hero-right {
         padding: 20px;
+    }
+    
+    .hero-right {
+        width: 100%;
+        padding-top: 50px;
     }
 
     .hero-buttons {
