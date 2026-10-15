@@ -34,6 +34,28 @@ Team decision: During the meeting on 13 October 2026, we agreed to use Sean’s 
 Evidence:
 https://github.com/seanhoenderdos/ai-fd-group-assignment/compare/main...nourhan-header-footer
 
+
+Date: 15 October 2026
+Task: Create the hero image using ai
+
+Ai tool: chatgpt
+
+Prompt: "Can you please generate an image that I can use for the hero section to be positioned to on the right side?
+
+I ahve attached a screenshot of hero section"
+
+What I learned:
+Chatgpt can easily get stuck in one direction so its best to be specific about what you want. Chatgpt usually creates pong images and so I have to usea tool like https://squoosh.app/ to convert it to webp.
+
+My testing:
+I checked the file extension and it was png which is great for the web.
+
+Decision:
+Used squoosh to convert to webp
+
+Evidence:
+/images/sean/hero-image-evidence.png
+
 ____________________________________________________________________________________________________________________________________________
 
 
