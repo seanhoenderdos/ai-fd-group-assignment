@@ -1,8 +1,13 @@
-/* local roboto fonts */
+/* Other CSS files */
+@import url('./pages/about.css');
+@import url('./pages/services.css');
+@import url('./pages/contact.css');
+@import url('./pages/home.css');
 
+/* local roboto fonts */
 @font-face {
     font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto-VariableFont_wdth,wght.ttf')
+    src: url('../assets/fonts/Roboto-VariableFont_wdth,wght.ttf')
         format('truetype');
     font-weight: 100 900;
     font-style: normal;
@@ -11,18 +16,12 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf')
+    src: url('../assets/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf')
         format('truetype');
     font-weight: 100 900;
     font-style: italic;
     font-display: swap;
 }
-
-/* Other CSS files */
-@import url('/Css/pages/about.css');
-@import url('/Css/pages/services.css');
-@import url('/Css/pages/contact.css');
-@import url('/Css/pages/home.css');
 
 /* @font-face tells browser where to find our fonts. 100-900 tell the browser that each font file contains weights from 100 to 900 */
 
@@ -128,6 +127,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    margin: 0;
 }
 
 /* visually hide the checkbox without removing keyboard access on mobile. */
