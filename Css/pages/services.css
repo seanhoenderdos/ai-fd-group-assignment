@@ -47,7 +47,7 @@
     max-width: 270px;
     padding: 0 0 24px;
     background-color: #f9faf8;
-    border: 1px solid #e5e7eb;
+   
     border-radius: 12px;
     overflow: hidden;
     text-align: left;
@@ -66,6 +66,8 @@
     height: 180px;
     object-fit: cover;
     margin-bottom: 20px;
+    border: none !important;
+    outline: none !important;
 }
 
 
@@ -128,6 +130,8 @@
     background-color: #ffffff;
     color: #1f2937;
     border: none;
+    outline: none;          
+    box-shadow: none; 
     border-radius: 6px;
     font-size: 1rem;
     font-weight: 700;
@@ -135,9 +139,10 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
 .cta-button:hover {
     background-color: #e5e7eb;
-    border-color: #e5e7eb;
+    
 }
 
 
