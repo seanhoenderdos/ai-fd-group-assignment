@@ -122,8 +122,8 @@
     padding: 13px 28px;
     background-color: #ffffff;
     color: #1f2937;
-    border: none;
-    outline: none;
+    border: none !important;
+    outline: none !important;
     box-shadow: none;
     border-radius: 6px;
     font-size: 1rem;
