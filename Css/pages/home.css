@@ -162,6 +162,7 @@
     align-items: center;
     gap: 8px;
     width: 100%;
+    margin: 0;
     border: 2px solid var(--color-primary);
     border-radius: 15px;
     padding: 12px;
@@ -221,26 +222,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 250px 20px;
+    padding: 100px 20px;
     background-color: var(--color-muted);
     color: var(--color-dark);
     width: 100%;
 }
 
 .testimonial {
+    width: 100%;
+    max-width: 800px;
+    margin: 0;
     font-size: 2rem;
     font-style: italic;
     font-weight: var(--font-weight-extra-light);
-    max-width: 800px;
     text-align: start;
+}
+
+.testimonial-quote,
+.testimonial-quote p {
+    margin: 0;
 }
 
 .testimonial-author {
     font-size: 1.25rem;
+    font-style: normal;
     font-weight: var(--font-weight-extra-bold);
     margin-top: 20px;
     text-align: end;
-    width: 50%;
 }
 
 /* CTA section */
