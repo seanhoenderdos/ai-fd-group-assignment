@@ -117,3 +117,19 @@ ______________________________________________________________________________
 ______________________________________________________________________________
 
 S Mathebula:
+
+Date: 14 October 2026
+
+Task: Generate four images for the Prime Shine services page.
+
+AI tool: Meta AI
+
+Prompt: "Generate four realistic cleaning service images for Regular Cleaning, Deep Cleaning, Move In / Move Out Cleaning, and Specialty Cleaning."
+
+What I learned: Clear prompts help AI generate images that match the website's needs.
+
+Testing: Check that each image matches its service and displays correctly on the website.
+
+Decision: Use suitable generated images for the service cards.
+
+Evidence: Generated images saved for the website used them on my service cards, they are in assets/images folder.
