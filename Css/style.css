@@ -1,8 +1,4 @@
-/* Other CSS files */
-@import url('./pages/about.css');
-@import url('./pages/services.css');
-@import url('./pages/contact.css');
-@import url('./pages/home.css');
+/* Shared styles only. Each HTML page links its own stylesheet after this file. */
 
 /* local roboto fonts */
 @font-face {
@@ -100,9 +96,19 @@
     padding-inline: 20px;
 }
 
-.site-main {
+.site-page > main {
     flex: 1;
+}
+
+.site-main {
     padding-block: 40px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
 }
 
 /* header colours and typography come from your shared variables. */

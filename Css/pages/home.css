@@ -172,6 +172,7 @@
     /* Leave room for a two-line title and the gap inside the square. */
     width: calc(100% - 44px);
     aspect-ratio: 1;
+    border-radius: 8px;
 }
 
 .service-image img {
