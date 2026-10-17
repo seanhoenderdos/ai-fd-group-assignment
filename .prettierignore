@@ -1,0 +1,12 @@
+node_modules/
+.npm-cache/
+package-lock.json
+
+# Third-party code and media are not maintained by the team.
+Css/all.min.css
+assets/
+webfonts/
+evidence/
+
+# Preserve the existing personal learning and evidence log.
+AI-USAGE.md

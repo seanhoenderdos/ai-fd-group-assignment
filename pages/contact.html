@@ -1,171 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
-    <title>Contact | Prime Shine</title>
-    <link rel="stylesheet" href="../Css/style.css">
-    <link rel="stylesheet" href="../Css/all.min.css">
-    <link rel="stylesheet" href="../Css/pages/contact.css">
-</head>
-<body class="site-page">
-    <a class="skip-link" href="#main-content">Skip to content</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+        <title>Contact | Prime Shine</title>
+        <link rel="stylesheet" href="../Css/style.css" />
+        <link rel="stylesheet" href="../Css/all.min.css" />
+        <link rel="stylesheet" href="../Css/pages/contact.css" />
+    </head>
+    <body class="site-page">
+        <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="header">
-        <div class="site-container header-inner">
-            <a class="header-logo" href="../index.html">
-                <i class="fa-solid fa-broom" aria-hidden="true"></i>
-                <h4>Prime Shine</h4>
-            </a>
+        <header class="header">
+            <div class="site-container header-inner">
+                <a class="header-logo" href="../index.html">
+                    <i class="fa-solid fa-broom" aria-hidden="true"></i>
+                    <h4>Prime Shine</h4>
+                </a>
 
-            
-            <input class="menu-toggle" type="checkbox" id="menu-toggle"
-                   aria-controls="primary-navigation">
-            <label class="menu-label" for="menu-toggle">
-                <span class="visually-hidden">Navigation menu</span>
-                <i class="fa-solid fa-bars menu-icon-open" aria-hidden="true"></i>
-                <i class="fa-solid fa-xmark menu-icon-close" aria-hidden="true"></i>
-            </label>
+                <input
+                    class="menu-toggle"
+                    type="checkbox"
+                    id="menu-toggle"
+                    aria-controls="primary-navigation"
+                />
+                <label class="menu-label" for="menu-toggle">
+                    <span class="visually-hidden">Navigation menu</span>
+                    <i class="fa-solid fa-bars menu-icon-open" aria-hidden="true"></i>
+                    <i class="fa-solid fa-xmark menu-icon-close" aria-hidden="true"></i>
+                </label>
 
-            <nav class="site-nav" id="primary-navigation" aria-label="Primary">
-                <ul class="site-nav-list">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./contact.html" aria-current="page">Contact</a></li>
+                <nav class="site-nav" id="primary-navigation" aria-label="Primary">
+                    <ul class="site-nav-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./contact.html" aria-current="page">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="contact-page" id="main-content" tabindex="-1">
+            <section class="contact-hero">
+                <div class="contact-hero-title">
+                    <h1>Contact Us</h1>
+                </div>
+
+                <div class="contact-hero-description">
+                    <p>
+                        Have a question or need help keeping your space clean? We'd love to hear
+                        from you. Get in touch with our friendly team, and we'll be happy to help.
+                    </p>
+                </div>
+            </section>
+
+            <section class="contact-container">
+                <div class="contact-info">
+                    <h2>Let's Talk</h2>
+                    <p>
+                        Whether you need a home cleaning service or have a question about our
+                        services, we're just a message away.
+                    </p>
+
+                    <div class="contact-detail">
+                        <h3>Phone</h3>
+                        <p>+1 555 123 4567</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h3>Email</h3>
+                        <p>info@primeshine.com</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h3>Working Hours</h3>
+                        <p>Monday - Saturday 9 AM - 6 PM</p>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="contact-form-heading">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill in the form below and tell us how we can help.</p>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="full-name">Full Name</label>
+                        <input
+                            id="full-name"
+                            name="full-name"
+                            type="text"
+                            placeholder="Enter your full name"
+                            required
+                        />
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="email">Email Address</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" required>
+                            <option value="">Choose a service</option>
+                            <option value="home-cleaning">Home Cleaning</option>
+                            <option value="office-cleaning">Office Cleaning</option>
+                            <option value="deep-cleaning">Deep Cleaning</option>
+                        </select>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="How can we help you?"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button class="contact-button" type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="site-container footer-inner">
+                <p class="footer-copyright">All Rights Reserved. &copy; 2026 Prime Shine</p>
+
+                <ul class="footer-social" aria-label="Social media">
+                    <li>
+                        <a href="/" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            <span class="visually-hidden"
+                                >Prime Shine on Facebook (opens in a new tab)</span
+                            >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span class="visually-hidden"
+                                >Prime Shine on Instagram (opens in a new tab)</span
+                            >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                            <span class="visually-hidden"
+                                >Prime Shine on TikTok (opens in a new tab)</span
+                            >
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
 
-    
-<main class="contact-page" id="main-content" tabindex="-1">
- 
-
- 
-<section class="contact-hero">
-
-  <div class="contact-hero-title">
-    <h1>Contact Us</h1>
-  </div>
-
-  <div class="contact-hero-description">
-    <p>
-      Have a question or need help keeping your space clean?
-      We'd love to hear from you. Get in touch with our
-      friendly team, and we'll be happy to help.
-    </p>
-  </div>
-</section>
-
-<section class="contact-container">
-  <div class="contact-info">
-    <h2>Let's Talk</h2>
-    <p>
-      Whether you need a home cleaning service or have a
-      question about our services, we're just a message away.
-    </p>
-
-    <div class="contact-detail">
-      <h3>Phone</h3>
-      <p>+1 555 123 4567</p>
-    </div>
-
-    <div class="contact-detail">
-      <h3>Email</h3>
-      <p>info@primeshine.com</p>
-    </div>
-
-    <div class="contact-detail">
-      <h3>Working Hours</h3>
-      <p>Monday - Saturday 9 AM - 6 PM </p>
-    </div>
-  </div>
-
-  <form class="contact-form">
-    <div class="contact-form-heading">
-      <h2>Send Us a Message</h2>
-      <p>Fill in the form below and tell us how we can help.</p>
-    </div>
-
-    <div class="contact-field">
-      <label for="full-name">Full Name</label>
-      <input id="full-name" name="full-name"
-             type="text" placeholder="Enter your full name" required>
-    </div>
-
-    <div class="contact-field">
-      <label for="email">Email Address</label>
-      <input id="email" name="email"
-             type="email" placeholder="Enter your email" required>
-    </div>
-
-    <div class="contact-field">
-      <label for="service">Service Needed</label>
-      <select id="service" name="service" required>
-        <option value="">Choose a service</option>
-        <option value="home-cleaning">Home Cleaning</option>
-        <option value="office-cleaning">Office Cleaning</option>
-        <option value="deep-cleaning">Deep Cleaning</option>
-      </select>
-    </div>
-
-    <div class="contact-field">
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message"
-                placeholder="How can we help you?" required></textarea>
-    </div>
-
-    <button class="contact-button" type="submit">
-      Send Message
-    </button>
-  </form>
-</section>
-
-</main>
-
-
-    <footer class="footer">
-        <div class="site-container footer-inner">
-            <p class="footer-copyright">
-                All Rights Reserved.
-                &copy; 2026 Prime Shine
-            </p>
-
-            
-            <ul class="footer-social" aria-label="Social media">
-                <li>
-                    <a href="/" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                        <span class="visually-hidden">Prime Shine on Facebook (opens in a new tab)</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                        <span class="visually-hidden">Prime Shine on Instagram (opens in a new tab)</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-                        <span class="visually-hidden">Prime Shine on TikTok (opens in a new tab)</span>
-                    </a>
-                </li>
-            </ul>
-
-            <nav aria-label="Footer">
-                <ul class="footer-links">
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./contact.html">
-                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                        Contact
-                    </a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-</body>
+                <nav aria-label="Footer">
+                    <ul class="footer-links">
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li>
+                            <a href="./contact.html">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
 </html>
