@@ -84,7 +84,7 @@
 
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-image">
+                        <figure class="service-image">
                             <picture>
                                 <img
                                     src="./assets/images/serviceOne.webp"
@@ -93,8 +93,10 @@
                                     height="300"
                                 />
                             </picture>
-                            <h3 class="service-title">Regular Cleaning</h3>
-                        </div>
+                            <figcaption>
+                                <h3 class="service-title">Regular Cleaning</h3>
+                            </figcaption>
+                        </figure>
                         <p class="service-description">
                             Keep your home clean, tidy, and comfortable with our regular cleaning
                             services. We take care of everyday dust, dirt, and mess so you can enjoy
@@ -102,7 +104,7 @@
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-image">
+                        <figure class="service-image">
                             <picture>
                                 <img
                                     src="./assets/images/prime_shine_deep_cleaning.webp"
@@ -111,8 +113,10 @@
                                     height="300"
                                 />
                             </picture>
-                            <h3 class="service-title">Deep Cleaning</h3>
-                        </div>
+                            <figcaption>
+                                <h3 class="service-title">Deep Cleaning</h3>
+                            </figcaption>
+                        </figure>
                         <p class="service-description">
                             Give your home a fresh start with a thorough top-to-bottom clean. We
                             tackle built-up dirt, stubborn grime, and those often-overlooked areas
@@ -120,7 +124,7 @@
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-image">
+                        <figure class="service-image">
                             <picture>
                                 <img
                                     src="./assets/images/prime_shine_move_in_move_out.webp"
@@ -129,8 +133,10 @@
                                     height="300"
                                 />
                             </picture>
-                            <h3 class="service-title">Move In / Move Out Cleaning</h3>
-                        </div>
+                            <figcaption>
+                                <h3 class="service-title">Move In / Move Out Cleaning</h3>
+                            </figcaption>
+                        </figure>
                         <p class="service-description">
                             Moving in or moving out? Let us take care of the cleaning. We help
                             prepare your space for its next chapter with a detailed clean that
@@ -138,7 +144,7 @@
                         </p>
                     </div>
                     <div class="service-card">
-                        <div class="service-image">
+                        <figure class="service-image">
                             <picture>
                                 <img
                                     src="./assets/images/prime_shine_specialty_cleaning.webp"
@@ -147,8 +153,10 @@
                                     height="300"
                                 />
                             </picture>
-                            <h3 class="service-title">Specialty Cleaning</h3>
-                        </div>
+                            <figcaption>
+                                <h3 class="service-title">Specialty Cleaning</h3>
+                            </figcaption>
+                        </figure>
                         <p class="service-description">
                             Give extra attention to the details that make a difference. From
                             sparkling windows to refreshed surfaces and upholstery, our specialty
@@ -158,12 +166,17 @@
                 </div>
             </section>
 
-            <section class="testimonials">
-                <quote class="testimonial">
-                    "Prime Shine transformed my home! Their attention to detail and professionalism
-                    is unmatched. I couldn't be happier with the results."
-                </quote>
-                <footer class="testimonial-author">- Thor</footer>
+            <section class="testimonials" aria-labelledby="testimonials-heading">
+                <h2 class="visually-hidden" id="testimonials-heading">What our customers say</h2>
+                <figure class="testimonial">
+                    <blockquote class="testimonial-quote">
+                        <p>
+                            "Prime Shine transformed my home! Their attention to detail and
+                            professionalism is unmatched. I couldn't be happier with the results."
+                        </p>
+                    </blockquote>
+                    <figcaption class="testimonial-author">- Thor</figcaption>
+                </figure>
             </section>
 
             <section class="cta-section">
